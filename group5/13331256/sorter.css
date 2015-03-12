@@ -2,7 +2,7 @@
 * @Author: ValenW
 * @Date:   2014-10-28 14:11:40
 * @Last Modified by:   ValenW
-* @Last Modified time: 2014-10-30 10:33:54
+* @Last Modified time: 2015-03-12 21:14:42
 */
 body {
     font-family: "微软雅黑", sans-serif, serif;
@@ -11,7 +11,7 @@ table {
     border: 1px #708090 solid;
     border-spacing: 0px;
 }
-th  {
+th, td.up, td.down {
     background-color: #000080;
     color: white;
     text-align: left;
@@ -21,6 +21,15 @@ th  {
     background-position: right;
     cursor:pointer;
 }
+th.up, td.up {
+    background-image: url("images/ascend.png");
+    background-color: #7FFFD4;
+}
+th.down, td.down {
+    background-image: url("images/descend.png");
+    background-color: #7FFFD4;
+}
+
 td {
     border: 1px #708090 solid;
     padding-right: 40px;
