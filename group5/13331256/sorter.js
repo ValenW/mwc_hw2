@@ -2,7 +2,7 @@
 * @Author: ValenW
 * @Date:   2014-10-28 14:21:40
 * @Last Modified by:   ValenW
-* @Last Modified time: 2015-03-12 21:55:19
+* @Last Modified time: 2015-03-13 21:39:01
 */
 window.onload = function() {
     var tables = getAllTables();
@@ -80,7 +80,6 @@ function toShort(event) {
     theTbody.appendChild(newTr);
 
     // 更新tr背景色和th
-
     var firsttr = nothead ? 1 : 0; // tr背景色变化
     for (var j = firsttr; j < oTr.length; j++) {
         if ((j+firsttr) % 2) oTr[j].style.backgroundColor = "#FFE4E1";
@@ -112,15 +111,11 @@ function getcmp(k) { // 比较函数
             val1 = Number(val1);
             val2 = Number(val2);
         }
-        if (val1 < val2) {
-            return -1;
-        } else if (val1 > val2) {
-            return 1;
-        } else {
-            return 0;
-        }
+        if (val1 < val2) return -1;
+        else if (val1 > val2) return 1;
+        else return 0;
     }
 }
 
-//var tables = getAllTables();
-//makeAllTablesSortable(tables);
+/*var tables = getAllTables();
+makeAllTablesSortable(tables);*/
